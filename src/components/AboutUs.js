@@ -390,11 +390,11 @@ const AboutUs = ({ dark }) => {
                 {/* CHANGE */}
                 Download Resume <i className="fa fa-file-pdf-o" />
               </a>
-              {/* <Link href={`/blog-${dark ? "dark" : "light"}`}>
+              <Link href={`/blog-${dark ? "dark" : "light"}`}>
                 <a className="btn btn-blog font-weight-700">
                   My Blog <i className="fa fa-edit" />
                 </a>
-              </Link> */}
+              </Link>
             </div>
           </div>
           {/* Personal Informations Ends */}
