@@ -19,10 +19,10 @@ const GetInTouch = () => {
     } else {
       emailjs
         .send(
-          "service_seruhwu", // service id
-          "template_21aw58z", // template id
+          "service_sfwe9xe", // service id
+          "template_itw4tdo", // template id
           mailData,
-          "Q3pccdLZhU-mZT7tQ" // public api
+          "0eBf4kbmXWVu9XyvX" // public api
         )
         .then(
           (response) => {
@@ -74,7 +74,7 @@ const GetInTouch = () => {
               </span>
               <h6 className="font-weight-700 uppercase">Email</h6>
               <span className="font-weight-400 second-font">
-                <i className="fa fa-envelope" /> you@youwebsite.com
+                <i className="fa fa-envelope" /> web@tkaciov.com
               </span>
               <h6 className="font-weight-700 uppercase">Skype</h6>
               <span className="font-weight-400 second-font">
