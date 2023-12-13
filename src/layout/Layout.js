@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
   return (
     <Fragment>
       <Head> 
-        <title>Moscow - Personal Portfolio</title>
+        <title>Jurij Tkaciov</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
           href="https://fonts.googleapis.com/css?family=Lato:400,700,900"
@@ -34,6 +34,12 @@ const Layout = ({ children }) => {
           type="text/css"
           href={`css/skins/${color}.css`}
         />
+
+        <link
+          rel="icon"
+          href="images/JT.svg"
+          type="image/x-icon" />
+
 
         <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
       </Head>
