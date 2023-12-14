@@ -822,6 +822,15 @@ section.bl-expand .bl-icon-close {
   transform: scale(0.84) translate(0, -122px);
 }
 
+.resume-card-3 {
+  transform: scale(0.84) translate(0, -122px);
+}
+
+.resume-card-3 {
+  opacity: 1;
+  transform: scale(0.84) translate(0, -182px);
+}
+
 .resume-card {
   padding: 0;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
@@ -860,9 +869,17 @@ section.bl-expand .bl-icon-close {
   width: 100%;
 }
 
+.resume-card.resume-card-2,
+.resume-card.resume-card-3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
 .resume-card.front {
   transform: scale(1) translate(0, 0);
-  z-index: 2;
+  z-index: 3;
   cursor: default;
 }
 
@@ -876,7 +893,7 @@ section.bl-expand .bl-icon-close {
 
 .resume-card.back {
   transform: scale(0.9) translate(0, -60px);
-  z-index: 1;
+  z-index: 2;
 }
 
 .resume-card.back:hover {
@@ -889,7 +906,7 @@ section.bl-expand .bl-icon-close {
 
 .resume-card.back-back {
   transform: scale(0.8) translate(0, -128px);
-  z-index: 0;
+  z-index: 1;
 }
 
 .resume-card.back-back .resume-card-name {
@@ -898,6 +915,19 @@ section.bl-expand .bl-icon-close {
 
 .resume-card.back-back:hover {
   transform: scale(0.8) translate(0, -138px);
+}
+
+.resume-card.back-back-back {
+  transform: scale(0.7) translate(0, -208px);
+  z-index: 0;
+}
+
+.resume-card.back-back-back .resume-card-name {
+  opacity: .5;
+}
+
+.resume-card.back-back-back:hover {
+  transform: scale(0.7) translate(0, -218px);
 }
 
 .resume-card-header {
@@ -924,6 +954,8 @@ section.bl-expand .bl-icon-close {
   padding: 24px;
   display: flex;
   flex-flow: column;
+  height: 55vh;
+  overflow-y: scroll;
 }
 
 .resume-content {
@@ -1155,6 +1187,10 @@ div.bl-panel-items>div>div img {
 div.bl-panel-items {
   top: 100%;
   z-index: 9999;
+}
+
+.list-header {
+  display: block;
 }
 
 div.bl-panel-items>div {
