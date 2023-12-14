@@ -1,11 +1,11 @@
-import emailjs from "emailjs-com";
-import { memo, useState } from "react";
-import SectionContainer from "./SectionContainer";
+import emailjs from 'emailjs-com';
+import { memo, useState } from 'react';
+import SectionContainer from './SectionContainer';
 const GetInTouch = () => {
   const [mailData, setMailData] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
   const { name, email, message } = mailData;
   const [error, setError] = useState(null);
@@ -19,20 +19,20 @@ const GetInTouch = () => {
     } else {
       emailjs
         .send(
-          "service_sfwe9xe", // service id
-          "template_itw4tdo", // template id
+          'service_sfwe9xe', // service id
+          'template_itw4tdo', // template id
           mailData,
-          "0eBf4kbmXWVu9XyvX" // public api
+          '0eBf4kbmXWVu9XyvX', // public api
         )
         .then(
           (response) => {
             setError(false);
             clearError();
-            setMailData({ name: "", email: "", message: "" });
+            setMailData({ name: '', email: '', message: '' });
           },
           (err) => {
             console.log(err.text);
-          }
+          },
         );
     }
   };
@@ -44,14 +44,14 @@ const GetInTouch = () => {
   return (
     <SectionContainer
       sectionName="Contact"
-      title={{ first: "get", last: "in touch" }}
+      title={{ first: 'get', last: 'in touch' }}
     >
       <div className="bl-content">
         {/* Main Heading Starts */}
         <div className="container page-title center-align">
           <h2 className="center-align">
             <span data-hover="get">get </span>
-            {""}
+            {''}
             <span data-hover="in touch">in touch</span>
           </h2>
         </div>
@@ -70,19 +70,15 @@ const GetInTouch = () => {
               {/* Contacts Starts */}
               <h6 className="font-weight-700 uppercase">Phone</h6>
               <span className="font-weight-400 second-font">
-                <i className="fa fa-phone" /> +34 62 11 84 01
+                <i className="fa fa-phone" /> +49 176 8483 5073
               </span>
               <h6 className="font-weight-700 uppercase">Email</h6>
               <span className="font-weight-400 second-font">
                 <i className="fa fa-envelope" /> web@tkaciov.com
               </span>
-              <h6 className="font-weight-700 uppercase">Skype</h6>
-              <span className="font-weight-400 second-font">
-                <i className="fa fa-skype" /> mark.smith
-              </span>
               <h6 className="font-weight-700 uppercase">Address</h6>
               <span className="font-weight-400 second-font">
-                <i className="fa fa-home" /> Moscow, Russia
+                <i className="fa fa-home" /> Kufstein, Austria
               </span>
               <br />
               {/* Contacts Ends */}
@@ -90,7 +86,7 @@ const GetInTouch = () => {
               <h6 className="font-weight-700 uppercase">Social Profiles</h6>
               <div className="social">
                 <ul className="list-inline social social-intro center-align p-none">
-                  <li className="facebook">
+                  {/* <li className="facebook">
                     <a href="#">
                       <i className="fa fa-facebook" />
                     </a>
@@ -104,9 +100,12 @@ const GetInTouch = () => {
                     <a href="#">
                       <i className="fa fa-google-plus" />
                     </a>
-                  </li>
+                  </li> */}
                   <li className="linkedin">
-                    <a href="#">
+                    <a
+                      target="blank"
+                      href="https://www.linkedin.com/in/jurij-tkaciov/"
+                    >
                       <i className="fa fa-linkedin" />
                     </a>
                   </li>
@@ -169,7 +168,7 @@ const GetInTouch = () => {
                     value={message}
                     className="materialize-textarea"
                     required=""
-                    defaultValue={""}
+                    defaultValue={''}
                   />
                   <label htmlFor="comment">Your Comment</label>
                 </div>
@@ -187,13 +186,13 @@ const GetInTouch = () => {
                 {/* Submit Form Button Ends */}
                 <div className="col s12 m12 l8 xl8 form-message">
                   <div
-                    className={error ? "red-text" : "green-text"}
-                    style={{ opacity: error == null ? "0" : "1" }}
+                    className={error ? 'red-text' : 'green-text'}
+                    style={{ opacity: error == null ? '0' : '1' }}
                   >
                     <span>
                       {error
-                        ? "Please Fill Required Fields"
-                        : "Your message has been received, We will contact you soon."}
+                        ? 'Please Fill Required Fields'
+                        : 'Your message has been received, We will contact you soon.'}
                     </span>
                   </div>
                 </div>
