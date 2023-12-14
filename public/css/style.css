@@ -2039,7 +2039,7 @@ body.blog .pagination li a i {
     opacity: 1;
   }
 
-  .resume-card-2 {
+  .resume-card-3 {
     margin-bottom: 0;
   }
 
@@ -2052,13 +2052,15 @@ body.blog .pagination li a i {
     margin-bottom: 24px;
   }
 
+  .resume-card.resume-card-0,
   .resume-card.resume-card-1,
-	.resume-card.resume-card-2 {
+	.resume-card.resume-card-2,
+  .resume-card.resume-card-3 {
     position: relative;
     transform: none !important;
   }
 
-  .resume-card.resume-card-2 {
+  .resume-card.resume-card-3 {
     margin-bottom: 0;
   }
 

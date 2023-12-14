@@ -1,10 +1,10 @@
-import { createContext, useCallback, useReducer } from "react";
+import { createContext, useCallback, useReducer } from 'react';
 
 const type = {
-  NAV: "NAV",
-  COLOR: "COLOR",
-  SHOWPROJECT: "SHOWPROJECT",
-  ACTIVEPROJECT: "ACTIVEPROJECT",
+  NAV: 'NAV',
+  COLOR: 'COLOR',
+  SHOWPROJECT: 'SHOWPROJECT',
+  ACTIVEPROJECT: 'ACTIVEPROJECT',
 };
 
 const Context = createContext();
@@ -39,7 +39,7 @@ const reducer = (state, action) => {
 const State = (props) => {
   const initialState = {
     nav: null,
-    color: "red",
+    color: 'red',
     showProject: false,
     activeProject: null,
   };
@@ -60,10 +60,10 @@ const State = (props) => {
   }, []);
 
   const getColor = useCallback((value) => {
-    let color = localStorage.getItem("color");
+    let color = localStorage.getItem('color');
     document.documentElement.style.setProperty(
-      "--main-color",
-      color ? color : value
+      '--main-color',
+      color ? color : value,
     );
     dispatch({
       type: type.COLOR,
@@ -72,8 +72,8 @@ const State = (props) => {
   }, []);
 
   const colorChange = useCallback((value) => {
-    document.documentElement.style.setProperty("--main-color", value);
-    localStorage.setItem("color", value);
+    document.documentElement.style.setProperty('--main-color', value);
+    localStorage.setItem('color', value);
     dispatch({
       type: type.COLOR,
       payload: value,

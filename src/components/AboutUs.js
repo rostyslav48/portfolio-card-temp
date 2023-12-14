@@ -1,8 +1,9 @@
 import Link from 'next/link';
-import { Fragment, memo, useMemo, useState } from 'react';
+import { Fragment, memo, useMemo, useState, useContext } from 'react';
 import cn from 'classnames';
 import useWindowSize from '../useWindowSize';
 import SectionContainer from './SectionContainer';
+import { Context } from '../context/context';
 
 const Experience = () => (
   <Fragment>
@@ -22,9 +23,9 @@ const Experience = () => (
             Banuba
           </h6>
           <span className="date">
-            <i className="fa fa-calendar-o" /> 2023 - present
+            <i className="fa fa-calendar-o" /> 01/2023 - 07/2023
           </span>
-          <h7 className="list-header">Industry: IT-StartUp, SaaS</h7>
+          <h6 className="list-header">Industry: IT-StartUp, SaaS</h6>
 
           <ul className="browser-default">
             <li>Team leadership, motivation, and development</li>
@@ -52,10 +53,10 @@ const Experience = () => (
             Quixant Deutschland GmbH
           </h6>
           <span className="date">
-            <i className="fa fa-calendar-o" /> 2019 - 2022
+            <i className="fa fa-calendar-o" /> 09/2019 - 05/2022
           </span>
 
-          <h7 className="list-header">Industry: IT-Hardware and Components</h7>
+          <h6 className="list-header">Industry: IT-Hardware and Components</h6>
 
           <ul className="browser-default">
             <li>
@@ -80,10 +81,10 @@ const Experience = () => (
             GmbH
           </h6>
           <span className="date">
-            <i className="fa fa-calendar-o" /> 2018 - 2019
+            <i className="fa fa-calendar-o" /> 02/2018 - 08/2019
           </span>
 
-          <h7 className="list-header">Industry: Automotive, Medical</h7>
+          <h6 className="list-header">Industry: Automotive, Medical</h6>
 
           <ul className="browser-default">
             <li>
@@ -117,10 +118,10 @@ const Experience = () => (
             Nosswitz GmbH
           </h6>
           <span className="date">
-            <i className="fa fa-calendar-o" /> 2017 - 2018
+            <i className="fa fa-calendar-o" /> 09/2017 - 01/2018
           </span>
 
-          <h7 className="list-header">Industry: Electrical facilities</h7>
+          <h6 className="list-header">Industry: Electrical facilities</h6>
 
           <ul className="browser-default">
             <li>
@@ -163,12 +164,12 @@ const Experience = () => (
             Honeywell Analytics
           </h6>
           <span className="date">
-            <i className="fa fa-calendar-o" /> 2012 - 2017
+            <i className="fa fa-calendar-o" /> 04/2012 - 08/2017
           </span>
 
-          <h7 className="list-header">
+          <h6 className="list-header">
             Industry: Gas and Radioactivity Measurement
-          </h7>
+          </h6>
 
           <ul className="browser-default">
             <li>
@@ -197,10 +198,10 @@ const Experience = () => (
             <span className="uppercase">Founder / CEO / Sales Manager </span>
           </h6>
           <span className="date">
-            <i className="fa fa-calendar-o" /> 2008 - present
+            <i className="fa fa-calendar-o" /> 03/2008 - present
           </span>
 
-          <h7 className="list-header">Industry: IT</h7>
+          <h6 className="list-header">Industry: IT</h6>
 
           <ul className="browser-default">
             <li>Develop and maintain customer relationships.</li>
@@ -462,6 +463,7 @@ const Languages = () => (
 );
 
 const AboutUs = ({ dark }) => {
+  const { openSection } = useContext(Context);
   const [active, setActive] = useState(0);
   const { width } = useWindowSize();
 
@@ -592,19 +594,22 @@ const AboutUs = ({ dark }) => {
                   <li>
                     <span className="font-weight-700">LinkedIn: </span>
                     <a href="https://www.linkedin.com/in/jurij-tkaciov/">
-                      Jurij Tkaciov
+                      https://www.linkedin.com/in/jurij-tkaciov/
                     </a>
                   </li>
                 </ul>
               </div>
 
-              <Link href="/contact">
-                {/* PROBLEM */}
-                <a href="#" className="btn font-weight-700">
-                  Ask for availability
-                  {/* <i className="fa fa-file-pdf-o" /> */}
-                </a>
-              </Link>
+              {/* PROBLEM */}
+              <a
+                onClick={() => {
+                  openSection('Contact');
+                }}
+                className="btn font-weight-700"
+              >
+                Ask for availability
+                {/* <i className="fa fa-file-pdf-o" /> */}
+              </a>
 
               {/* <Link href={`/blog-${dark ? 'dark' : 'light'}`}>
                 <a className="btn btn-blog font-weight-700">
