@@ -168,7 +168,6 @@ const GetInTouch = () => {
                     value={message}
                     className="materialize-textarea"
                     required=""
-                    defaultValue={''}
                   />
                   <label htmlFor="comment">Your Comment</label>
                 </div>

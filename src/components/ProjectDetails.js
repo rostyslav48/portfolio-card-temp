@@ -26,18 +26,18 @@ const ProjectDetails = () => {
       className={`bl-panel-items ${showProject ? 'bl-panel-items-show' : ''}`}
       id="bl-panel-work-items"
     >
-      {projectsDetails.map((project, index) => (
+      {projectsDetails.map((project) => (
         <div
-          key={project.name + project.start}
-          data-panel={`panel-${index + 1}`}
-          className={activeProject == index + 1 ? 'bl-show-work' : ''}
+          key={project.id}
+          data-panel={`panel-${project.id}`}
+          className={activeProject == project.id ? 'bl-show-work' : ''}
         >
           <div className="row">
             {/* Project Main Content Starts */}
             <div className="col s12 l6 xl6 section-padding section-padding-right-none">
               <img
                 className="responsive-img"
-                src={`images/projects/project-${index + 1}.webp`}
+                src={`images/projects/project-${project.id}.webp`}
                 alt="project"
               />
             </div>

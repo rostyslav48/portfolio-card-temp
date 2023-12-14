@@ -39,16 +39,16 @@ const Portfolio = () => {
           <div className="row center-align da-thumbs" id="bl-work-items">
             {/* Project Starts */}
 
-            {projectsDetails.map((project, index) => (
+            {projectsDetails.map((project) => (
               <div
-                key={project.name + index}
+                key={project.id}
                 className="col s12 m6 l6 xl4"
-                data-panel={`panel-${index + 1}`}
+                data-panel={`panel-${project.id}`}
               >
-                <a href="#" onClick={() => activeShowProject(index + 1)}>
+                <a href="#" onClick={() => activeShowProject(project.id)}>
                   <img
                     className="responsive-img"
-                    src={`images/projects/project-${index + 1}.webp`}
+                    src={`images/projects/project-${project.id}.webp`}
                     alt="Project"
                   />
                   <div className="valign-wrapper">
