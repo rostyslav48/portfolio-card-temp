@@ -1,5 +1,5 @@
-import { memo, useEffect, useRef } from "react";
-import Typed from "typed.js";
+import { memo, useEffect, useRef } from 'react';
+import Typed from 'typed.js';
 
 const TypingAnimation = ({ data }) => {
   // Create Ref element.
@@ -8,7 +8,7 @@ const TypingAnimation = ({ data }) => {
   useEffect(() => {
     const typed = new Typed(el.current, {
       // PROBLEM
-      strings: data ? data : ["Business Development Director", "Manager", "Investor"], // Strings to display
+      strings: data ? data : ['BD Director', 'Manager', 'Investor'], // Strings to display
       typeSpeed: 100,
       backSpeed: 100,
       backDelay: 100,
@@ -25,7 +25,7 @@ const TypingAnimation = ({ data }) => {
   return (
     <span
       className="ah-words-wrapper"
-      style={{ width: "206.288px", overflow: "hidden" }}
+      style={{ width: '206.288px', overflow: 'hidden' }}
     >
       <b className="is-visible" ref={el}></b>
     </span>
