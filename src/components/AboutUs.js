@@ -282,27 +282,7 @@ const Skills = () => (
           <div className="col s6">
             {/* Single Skills Starts */}
             <div className="resume-content">
-              <h6 className="uppercase">Lithuanian</h6>
-              <p>
-                <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
-                <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
-                <i className="fa fa-star-o" />
-              </p>
-            </div>
-            {/* Single Skills Ends */}
-            {/* Single Skills Starts */}
-            <div className="resume-content">
-              <h6 className="uppercase">English</h6>
-              <p>
-                <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
-                <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
-                <i className="fa fa-star-o" />
-              </p>
-            </div>
-            {/* Single Skills Ends */}
-            {/* Single Skills Starts */}
-            <div className="resume-content">
-              <h6 className="uppercase">German</h6>
+              <h6 className="uppercase">Sales & Cold Calling</h6>
               <p>
                 <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
                 <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
@@ -312,11 +292,31 @@ const Skills = () => (
             {/* Single Skills Ends */}
             {/* Single Skills Starts */}
             <div className="resume-content">
-              <h6 className="uppercase">Russian</h6>
+              <h6 className="uppercase">Lead generation</h6>
               <p>
                 <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
                 <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
-                <i className="fa fa-star" />{' '}
+                <i className="fa fa-star-o" />
+              </p>
+            </div>
+            {/* Single Skills Ends */}
+            {/* Single Skills Starts */}
+            <div className="resume-content">
+              <h6 className="uppercase">Communication & Negotiation</h6>
+              <p>
+                <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
+                <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
+                <i className="fa fa-star-half-empty" />
+              </p>
+            </div>
+            {/* Single Skills Ends */}
+            {/* Single Skills Starts */}
+            <div className="resume-content">
+              <h6 className="uppercase">Engineering</h6>
+              <p>
+                <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
+                <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
+                <i className="fa fa-star-o" />
               </p>
             </div>
             {/* Single Skills Ends */}
@@ -326,28 +326,7 @@ const Skills = () => (
           <div className="col s6">
             {/* Single Skills Starts */}
             <div className="resume-content">
-              <h6 className="uppercase">leadership</h6>
-              <p>
-                <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
-                <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
-                <i className="fa fa-star-half-empty" />
-              </p>
-            </div>
-            {/* Single Skills Ends */}
-            {/* Single Skills Starts */}
-            <div className="resume-content">
-              <h6 className="uppercase">Management</h6>
-              <p>
-                <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
-                <i className="fa fa-star" />{' '}
-                <i className="fa fa-star-half-empty" />{' '}
-                <i className="fa fa-star-o" />
-              </p>
-            </div>
-            {/* Single Skills Ends */}
-            {/* Single Skills Starts */}
-            <div className="resume-content">
-              <h6 className="uppercase">Sales and Negotiation</h6>
+              <h6 className="uppercase">Leadership & Management</h6>
               <p>
                 <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
                 <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
@@ -357,11 +336,23 @@ const Skills = () => (
             {/* Single Skills Ends */}
             {/* Single Skills Starts */}
             <div className="resume-content">
-              <h6 className="uppercase">Analytical and Strategic Thinking</h6>
+              <h6 className="uppercase">Analytic & Forecasting</h6>
               <p>
-                <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
                 <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
                 <i className="fa fa-star" />
+                <i className="fa fa-star" />
+                <i className="fa fa-star-o" />
+              </p>
+            </div>
+            {/* Single Skills Ends */}
+            {/* Single Skills Starts */}
+            <div className="resume-content">
+              <h6 className="uppercase">Marketing</h6>
+              <p>
+                <i className="fa fa-star" /> <i className="fa fa-star" />
+                <i className="fa fa-star" />{' '}
+                <i className="fa fa-star-half-empty" />
+                <i className="fa fa-star-o" />
               </p>
             </div>
             {/* Single Skills Ends */}
@@ -377,7 +368,7 @@ const Languages = () => (
     {/* Skills Header Title Starts */}
     <div className="resume-card-header">
       <div className="resume-card-name">
-        <i className="fa fa-star" /> Languages
+        <i className="fa fa-language" /> Languages
       </div>
     </div>
     {/* Skills Header Title Starts */}
@@ -432,42 +423,33 @@ const Languages = () => (
           <div className="col s6">
             {/* Single Skills Starts */}
             <div className="resume-content">
-              <h6 className="uppercase">leadership</h6>
+              <h6 className="uppercase">Belarussian</h6>
               <p>
                 <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
-                <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
-                <i className="fa fa-star-half-empty" />
-              </p>
-            </div>
-            {/* Single Skills Ends */}
-            {/* Single Skills Starts */}
-            <div className="resume-content">
-              <h6 className="uppercase">Management</h6>
-              <p>
-                <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
-                <i className="fa fa-star" />{' '}
-                <i className="fa fa-star-half-empty" />{' '}
+                <i className="fa fa-star" /> <i className="fa fa-star-o" />
                 <i className="fa fa-star-o" />
               </p>
             </div>
             {/* Single Skills Ends */}
             {/* Single Skills Starts */}
             <div className="resume-content">
-              <h6 className="uppercase">Sales and Negotiation</h6>
+              <h6 className="uppercase">Ukrainian</h6>
               <p>
                 <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
-                <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
+                <i className="fa fa-star-o" />
+                <i className="fa fa-star-o" />
                 <i className="fa fa-star-o" />
               </p>
             </div>
             {/* Single Skills Ends */}
             {/* Single Skills Starts */}
             <div className="resume-content">
-              <h6 className="uppercase">Analytical and Strategic Thinking</h6>
+              <h6 className="uppercase">Polish</h6>
               <p>
-                <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
-                <i className="fa fa-star" /> <i className="fa fa-star" />{' '}
-                <i className="fa fa-star" />
+                <i className="fa fa-star" /> <i className="fa fa-star-o" />
+                <i className="fa fa-star-o" />
+                <i className="fa fa-star-o" />
+                <i className="fa fa-star-o" />
               </p>
             </div>
             {/* Single Skills Ends */}
@@ -701,7 +683,7 @@ const AboutUs = ({ dark }) => {
                     onClick={() => activeState.setActive(3)}
                   >
                     <h6 className="resume-list-item-title uppercase">
-                      <i className="fa fa-star" /> Languages
+                      <i class="fa fa-language"></i> Languages
                     </h6>
                   </div>
                 </div>
@@ -798,27 +780,29 @@ const AboutUs = ({ dark }) => {
             <div className="col s12 m4 l4 center-align">
               <h3>
                 <i className="fa fa-briefcase" />
-                <span className="font-weight-900">4+</span>
+                <span className="font-weight-900">20+</span>
               </h3>
-              <h6 className="uppercase font-weight-700">Years Experience</h6>
+              <h6 className="uppercase font-weight-700">Years in sales</h6>
             </div>
             {/* Fact Badge Item Ends */}
             {/* Fact Badge Item Starts */}
             <div className="col s12 m4 l4 center-align">
               <h3>
                 <i className="fa fa-handshake-o" />
-                <span className="font-weight-900">89+</span>
+                <span className="font-weight-900">15+</span>
               </h3>
-              <h6 className="uppercase font-weight-700">Done Projects</h6>
+              <h6 className="uppercase font-weight-700">
+                Years leadership role
+              </h6>
             </div>
             {/* Fact Badge Item Ends */}
             {/* Fact Badge Item Starts */}
             <div className="col s12 m4 l4 center-align">
               <h3>
                 <i className="fa fa-heart-o" />
-                <span className="font-weight-900">77+</span>
+                <span className="font-weight-900">11</span>
               </h3>
-              <h6 className="uppercase font-weight-700">Happy customers</h6>
+              <h6 className="uppercase font-weight-700">Projects</h6>
             </div>
             {/* Fact Badge Item Ends */}
           </div>
